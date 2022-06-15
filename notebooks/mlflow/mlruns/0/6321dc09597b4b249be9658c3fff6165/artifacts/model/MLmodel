@@ -1,0 +1,25 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.8.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 1.25.1
+model_uuid: ded94c0f88a94a6ea97a8676418761fa
+run_id: 6321dc09597b4b249be9658c3fff6165
+signature:
+  inputs: '[{"name": "gender", "type": "double"}, {"name": "relevent_experience",
+    "type": "double"}, {"name": "enrolled_university", "type": "double"}, {"name":
+    "education_level", "type": "double"}, {"name": "major_discipline", "type": "double"},
+    {"name": "experience", "type": "double"}, {"name": "company_size", "type": "double"},
+    {"name": "company_type", "type": "double"}, {"name": "last_new_job", "type": "double"},
+    {"name": "city_development_index", "type": "double"}, {"name": "training_hours",
+    "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-06-14 16:34:28.523970'
